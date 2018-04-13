@@ -13,8 +13,7 @@ def Linear_Regression_Model():
     
     df = pd.read_csv(symbol_to_path('SPY'), index_col='Date', parse_dates=True, usecols=['Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Adj Close'])
 
-Lin
- ldasfk1efaedafsdf
+
     total = df['Adj Close'].count()
     
     # Starts from 2500, because data from too previous possibly cause overfitting
