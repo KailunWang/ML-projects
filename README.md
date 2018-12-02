@@ -1,64 +1,46 @@
-# Udacity Machine Learning Engineer Nanodegree 
+# Machine Learning Engineer Nanodegree
+# Model Evaluation and Validation
+## Project: Predicting Boston Housing Prices
 
-This repo contains the projects for Udacity Machine Learning Engineering Nanodegree.  
+### Install
 
+This project requires **Python 2.7**(if you complete this project in Python 3.x, you will have to update the code in various places including all relevant print statements) and the following Python libraries installed:
 
-## Project 0: Predicting Titanic Survival Exploration (`0.titanic_survival_exploration/`)
-### Overview 
-Created a simple decision algorithms and increased its complexity until it could accurately predict the outcomes for at least 80% of the passengers in the provided data. 
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
 
-**Keywords:** Python, NumPy, Pandas, Matplotlib, simple algorithms
+You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
----  
+If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer.
 
-## Project 1: Predicting Boston Housing Prices (`1.boston_housing/`) 
-### Overview 
-Built a regression model to predict the value of a given house in the Boston real estate market using various statistical analysis tools. Identified the best price that a client can sell their house utilizing machine learning algorithms.   
+### Code
 
-**Keywords:** statistical analysis, metric performance, cross validation, bias/variance tradeoffs, learning curves, model complexity  
+Template code is provided in the `boston_housing.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `housing.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
 
+### Run
 
----  
+In a terminal or command window, navigate to the top-level project directory `boston_housing/` (that contains this README) and run one of the following commands:
 
-## Project 2: Finding Donors for CharityML (`finding_donors/`) 
-### Overview 
-Investigated factors that affect the likelihood of charity donations being made based on real census data. Developed a naive classifier to compare testing results to. Trained and tested several supervised machine learning models on preprocessed census data to predict the likelihood of donations. Selected the best model based on accuracy, a modified F-scoring metric, and algorithm efficiency. 
+```bash
+ipython notebook boston_housing.ipynb
+```  
+or
+```bash
+jupyter notebook boston_housing.ipynb
+```
 
-**Keywords:** classification, logistic regression, decision trees, ensemble methods, model tuning 
+This will open the Jupyter Notebook software and project file in your browser.
 
+### Data
 
----  
+The modified Boston housing dataset consists of 489 data points, with each datapoint having 3 features. This dataset is a modified version of the Boston Housing dataset found on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Housing).
 
-## Project 3: Creating Customer Segments (`customer_segments/`) 
-### Overview 
-Reviewed unstructured data to understand the patterns and natural categories that the data fits into. Used multiple algorithms and both empirically and theoretically compared and contrasted their results. Made predictions about the natural categories of multiple types in a dataset, then checked these predictions against the result of unsupervised analysis. 
+**Features**
+1.  `RM`: average number of rooms per dwelling
+2. `LSTAT`: percentage of population considered lower status
+3. `PTRATIO`: pupil-teacher ratio by town
 
-**Keywords**: clustering, pca, feature selection, k means, gaussian mixture model 
-
-
----  
-
-## Project 4: Traing a Cab (`smartcab/`) 
-### Overview 
-Applied reinforcement learning to build a simulated vehicle navigation agent. Identified the environment the agent operates in and the possible states the agent can be in. Implemented and optimized a Q-Learning algorithm to allow the agent to automatically learn an optimal driving strategy based on rewards and penalties. 
-
-**Keywords:** reinforcement learning, q-learning 
-
-
----  
-
-## Project 5: Classify Images using Neural Network (`dog_app/`) 
-### Overview 
-Classified images from the CIFAR-10 dataset. The dataset was preprocessed (image normalization, label one-hot encoding), then trained a convolutional neural network with convolutional layer, max pool layer and fully connected layer on all the samples. The model was then evaluated on test samples. 
-
-**Keywords:** classification, convolutional neural network, tensorflow, keras, ResNet50
-
-
----  
-
-## Project 6: Building a Stock Price Indicator (`capstone/`) 
-### Overview 
-Capstone project for this Nanodegree. Built a stock price indicator that took daily trading data over a certain date range as input, and outputs projected estimates for given query dates. Created time-series cross validation method on stock data. Applied two metrics and three regression models.  
-
-**Keywords:** supervised learning, time series cross validation, linear regression, knn, svr, model refinement
-
+**Target Variable**
+4. `MEDV`: median value of owner-occupied homes
